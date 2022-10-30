@@ -1,5 +1,6 @@
 ## Open Library API: https://internetarchive.github.io/openlibrary-api
 * https://github.com/internetarchive/openlibrary/labels/Theme%3A%20Public%20APIs
+* https://openlibrary.org/developers/api
 
 ---
 

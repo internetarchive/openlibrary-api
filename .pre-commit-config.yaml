@@ -13,8 +13,8 @@ repos:
       - id: check-yaml
       - id: detect-private-key
       - id: end-of-file-fixer
-      - id: mixed-line-ending
         types_or: [python, yaml]
+      - id: mixed-line-ending
       - id: requirements-txt-fixer
       - id: trailing-whitespace
         args:
@@ -28,7 +28,8 @@ repos:
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.2
     hooks:
-      - id: codespell  # See setup.cfg for args
+      - id: codespell  # See pyproject.toml for args
+        args: [--skip=dist/*]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: 'v0.982'

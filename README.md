@@ -1,4 +1,7 @@
-# Open Library API: https://internetarchive.github.io/openlibrary-api
+## Open Library API: https://internetarchive.github.io/openlibrary-api
+* https://github.com/internetarchive/openlibrary/labels/Theme%3A%20Public%20APIs
+
+---
 
 # How to host Swagger API documentation with GitHub Pages
 [<img alt="The blog of Peter Evans: How to Host Swagger Documentation With Github Pages" title="View blog post" src="https://peterevans.dev/img/blog-published-badge.svg">](https://peterevans.dev/posts/how-to-host-swagger-docs-with-github-pages/)

@@ -32,14 +32,14 @@ repos:
         args: [--skip=dist/*]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v0.982'
+    rev: 'v0.990'
     hooks:
       - id: mypy  # See pyproject.toml for args
         additional_dependencies:
           - types-all
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.2.0
+    rev: v3.2.2
     hooks:
       - id: pyupgrade
         args:

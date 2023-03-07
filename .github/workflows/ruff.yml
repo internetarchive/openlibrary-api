@@ -6,5 +6,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: pip install ruff
-    - run: ruff extend-select=C--format=github --target-version=py37 .
-    - run: ruff --format=github --line-length=361 --target-version=py37 .
+    - run: ruff --format=github --target-version=py37 .
+ 

@@ -66,10 +66,8 @@ The example API specification used by this repository can be seen hosted at [htt
 ---
 ### Convert `swagger.json` into `swagger.yml`:
 ```python
->>> from pathlib import Path
->>> import yaml
->>> d = json.loads(Path("swagger.json").read_text())
->>> with open("swagger.yaml", "w") as out_file:
-...     yaml.dump(d, out_file)
+>>> import json, yaml
+>>> with open("swagger.json") as in_file, open("swagger.yaml", "w") as out_file:
+...     yaml.dump(json.load(in_file), out_file)
 ...
 ```

@@ -62,3 +62,14 @@ The example API specification used by this repository can be seen hosted at [htt
 7. Browse to the Swagger documentation at `https://{github-username}.github.io/{repository-name}/`.
 
    The example API specification used by this repository can be seen hosted at [https://peter-evans.github.io/swagger-github-pages](https://peter-evans.github.io/swagger-github-pages/).
+
+---
+### Convert `swagger.json` into `swagger.yml:
+```python
+>>> from pathlib import Path
+>>> import yaml
+>>> d = json.loads(Path("swagger.json").read_text())
+>>> with open("swagger.yaml", "w") as out_file:
+...     yaml.dump(d, out_file)
+...
+```

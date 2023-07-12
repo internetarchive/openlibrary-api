@@ -64,7 +64,7 @@ The example API specification used by this repository can be seen hosted at [htt
    The example API specification used by this repository can be seen hosted at [https://peter-evans.github.io/swagger-github-pages](https://peter-evans.github.io/swagger-github-pages/).
 
 ---
-### Convert `swagger.json` into `swagger.yml:
+### Convert `swagger.json` into `swagger.yml`:
 ```python
 >>> from pathlib import Path
 >>> import yaml

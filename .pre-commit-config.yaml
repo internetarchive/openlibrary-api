@@ -21,7 +21,7 @@ repos:
           - --markdown-linebreak-ext=md
 
   - repo: https://github.com/psf/black
-    rev: 23.9.1
+    rev: 23.10.0
     hooks:
       - id: black  # See pyproject.toml for args
 
@@ -32,7 +32,7 @@ repos:
         args: [--skip=dist/*]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.5.1'
+    rev: 'v1.6.1'
     hooks:
       - id: mypy  # See pyproject.toml for args
         additional_dependencies:

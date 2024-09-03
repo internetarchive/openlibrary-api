@@ -8,7 +8,7 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: check-yaml
       - id: detect-private-key
@@ -21,25 +21,23 @@ repos:
           - --markdown-linebreak-ext=md
 
   - repo: https://github.com/psf/black
-    rev: 24.2.0
+    rev: 24.8.0
     hooks:
       - id: black  # See pyproject.toml for args
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.3.0
     hooks:
       - id: codespell  # See pyproject.toml for args
         args: [--skip=dist/*]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.8.0'
+    rev: 'v1.11.2'
     hooks:
       - id: mypy  # See pyproject.toml for args
-        additional_dependencies:
-          - types-all
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
+    rev: v3.17.0
     hooks:
       - id: pyupgrade
         args:

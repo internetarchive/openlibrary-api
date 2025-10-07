@@ -2,6 +2,9 @@
 # `pip install pre-commit` or `brew install pre-commit`
 # Then run `pre-commit install`
 
+ci:
+  autoupdate_schedule: monthly
+
 # Learn more about this config here: https://pre-commit.com/
 default_language_version:
   python: python3.10
@@ -20,7 +23,7 @@ repos:
         args:
           - --markdown-linebreak-ext=md
 
-  - repo: https://github.com/psf/black
+  - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.9.0
     hooks:
       - id: black  # See pyproject.toml for args

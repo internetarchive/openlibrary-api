@@ -2,6 +2,9 @@
 # `pip install pre-commit` or `brew install pre-commit`
 # Then run `pre-commit install`
 
+ci:
+  autoupdate_schedule: monthly
+
 # Learn more about this config here: https://pre-commit.com/
 default_language_version:
   python: python3.10

@@ -24,7 +24,7 @@ repos:
           - --markdown-linebreak-ext=md
 
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 25.9.0
+    rev: 25.11.0
     hooks:
       - id: black  # See pyproject.toml for args
 
@@ -35,12 +35,12 @@ repos:
         args: [--skip=dist/*]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.18.2'
+    rev: 'v1.19.0'
     hooks:
       - id: mypy  # See pyproject.toml for args
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.21.0
+    rev: v3.21.2
     hooks:
       - id: pyupgrade
         args:
